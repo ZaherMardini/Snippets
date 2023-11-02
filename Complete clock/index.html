@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/CSS/style.css" />
+    <link rel="stylesheet" href="Style/CSS/all.min.css">
+    <link rel="stylesheet" href="Style/CSS/+Z-framework.css" />
+    <script defer src="main.js"></script>
+    <!-- <script defer src="main.js"></script> -->
+    <title>Timer</title>
+  </head>
+  <body>
+    <div class="container p-center f-center">
+      <div class="watch f-center">
+        <input type="number" id="hours">
+        <input type="number" id="minutes">
+        <input type="number" id="seconds">
+      </div>
+      <div class="controls-container">
+        <div class="controls" mode="timer">
+          <label>timer</label>
+          <div id="test" class="timer button" onclick = startTimer()>
+            <i class="fa fa-play"></i>
+          </div>
+          <div class="timer button" onclick = pauseTimer()>
+            <i class="fa fa-pause"></i>
+          </div>
+          <div id="stop-all" class="timer button" onclick = stopAll()>
+            <i class="fa fa-repeat"></i>
+          </div>
+        </div>
+        <div class="controls" mode="clock">
+          <label>clock</label>
+          <div class="clock button" onclick = startClock()>
+            <i class="fa fa-play"></i>
+          </div>
+          <div class="clock button" onclick = stopClock()>
+            <i class="fa fa-pause"></i>
+          </div>
+          <div id="stop-all" class="timer button" onclick = stopAll()>
+            <i class="fa fa-repeat"></i>
+          </div>  
+        </div>
+        <div class="controls" mode="stopwatch">
+          <label>stopwatch</label>
+          <div class="stop-watch button" onclick = startStopWatch()>
+            <i class="fa fa-play"></i>
+          </div>
+          <div class="stop-watch button" onclick = pauseStopWatch()>
+            <i class="fa fa-pause"></i>
+          </div>
+          <div id="stop-all" class="timer button" onclick = stopAll()>
+            <i class="fa fa-repeat"></i>
+          </div>  
+        </div>  
+      </div>
+      <select name="mode" onchange = mode()>
+        <option value="timer">timer</option>
+        <option value="clock">clock</option>
+        <option value="stopwatch">stopwatch</option>
+      </select>
+    </div>
+  </body>
+</html>

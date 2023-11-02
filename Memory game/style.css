@@ -1,0 +1,118 @@
+*{
+  box-sizing:border-box;
+  text-transform: capitalize;
+  color:white;
+  margin:0;
+  padding:0;
+}
+:root{
+  --containerTestColor:#ffffff29;
+  --main-color:#14289b;
+  --secondary-color:#0065ff;
+  --contrast:aqua;
+  --king: #005c5e;
+  --slim:4px;
+  --material:black
+}
+body{
+  background-color:black;
+}
+.start{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index:5;
+  background-color:rgba(0, 128, 0, 0.477);
+  line-height: 800px;
+  text-align:center;
+}
+.start span{
+  font-size: 40px;
+  background-color: #00ffa1f5;
+  padding: 30px;
+  cursor: pointer;
+}
+.container{
+  position: relative;  
+  width:100%;
+  padding:20px;
+}
+.game-info{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+  background-color: var(--containerTestColor);
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+.game-info .name{
+  padding: 10px;
+  font-size: 30px;
+  background-color: green;
+  border-radius: 5px;
+}
+.game-info .tries{
+  padding: 10px;
+  font-size: 30px;
+  background-color: var(--king);
+  border-radius: 5px;
+}
+.blocks{
+  width: 80%;
+  transform: translatex(12%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  justify-items: center;
+  grid-gap:20px;
+  background-color: darkslategrey;
+  padding: 30px;
+  margin: 15px 0;
+}
+.block{
+  background-color: green;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+  transition:.5s;
+  transform-style:preserve-3d;
+  position: relative;
+  border:5px solid white;
+}
+.block img{
+  width:150px;
+}
+.front{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+  line-height: 140px;
+}
+.front::before{
+  content:'?';
+  color:white;
+  font-size: 100px;
+}
+.back{
+  background-color:white;
+  transform:rotateY(180deg);
+}
+.front,.back{
+  position: absolute;
+  backface-visibility: hidden;
+}
+.flip{
+  transform:rotateY(180deg);
+}
+.matched{
+  transform:rotateY(180deg);
+}
+.stop{
+  pointer-events: none;
+}

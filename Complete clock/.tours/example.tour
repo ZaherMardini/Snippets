@@ -1,0 +1,11 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "example",
+  "steps": [
+    {
+      "file": "main.js",
+      "description": "this must stop every active interval so don't forget that\r\n",
+      "line": 67
+    }
+  ]
+}

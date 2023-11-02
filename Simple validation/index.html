@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <script defer src="main.js"></script>
+    <!-- <script type="module" src="main.js"></script> -->
+    <title>Simple validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <i class="fas fa-user-shield fa-4x"></i>
+      <form>
+        <div id="cont-name">
+          <label for="name">full name</label>
+          <input placeholder="Enter your name" id="name" type="text">
+          <span class="name-error"></span>
+        </div>
+        <div id="cont-number">
+          <label for="number">phone number</label>
+          <input placeholder="+963 993 269 341" id="number" type="text">          
+          <span class="number-error"></span>
+        </div>
+        <div id="cont-email">
+          <label for="email">email</label>
+          <input placeholder="E-mail" id="email" type="email">
+          <span class="email-error"></span>
+        </div>
+        <div id="cont-message">
+          <label for="message">message</label>
+          <textarea maxlength="40" rows="5" placeholder="write here" id="message" type="email"></textarea>
+          <span class="message-info"></span>
+        </div>
+        <div id="cont-submit">
+          <input type="submit" value="send">
+          <span class="submit-error">Enter valid data</span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

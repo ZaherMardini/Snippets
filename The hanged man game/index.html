@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="+Z-framework.css" />
+    <script defer src="main.js"></script>
+    <!-- <script type="module" src="main.js"></script> -->
+    <title>The hanged man game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <div class="name">The hanged man game</div>
+        <div class="category">
+          category: <span>life</span>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="hangedman-drawing">
+          <div class="drawing">
+            <div class="stand"></div>
+            <div class="rope"></div>
+            <div class="hang"></div>
+            <div class="man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="hands"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+        </div>
+        <div class="letters"></div>
+      </div>
+      <hr>
+      <div class="letters-guess"></div>
+    </div>
+    <audio id="success" src="success.wav"></audio>
+    <audio id="fail" src="fail.wav"></audio>
+  </body>
+</html>

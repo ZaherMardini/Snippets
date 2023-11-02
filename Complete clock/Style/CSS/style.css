@@ -1,0 +1,101 @@
+*{
+  box-sizing:border-box;
+  text-transform: capitalize;
+  color:white;
+  margin:0;
+  padding:0;
+}
+:root{
+  --containerTestColor:#9595958c;
+  --main-color:#14289b;
+  --secondary-color:#0065ff;
+  --contrast:aqua;
+  --king: #005c5e;
+  --slim:4px;
+  --material:black;
+  --section-padding:30px;
+}
+body{
+  height: 100vh;
+  background: linear-gradient(230deg, #4e03bf , #02002c 70%);
+}
+input, select{
+  border:none;
+}
+input:focus, select:focus{
+  outline:none;
+}
+.container{
+  padding: var(--section-padding);
+  width: 500px;
+  background: #094c925c;
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+}
+body::before{
+  content:'';
+  width:100px;
+  height:100px;
+  background-color:red;
+}
+.watch{
+  gap: 30px;
+  width: 100%;
+}
+input{
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 12px;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+.button{
+  padding: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  cursor: pointer;
+  margin: 20px;
+}
+.controls-container{
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+#stop-all{
+  background-color: red;
+}
+option{
+  background: #0093ff;
+  border:none;
+}
+select{
+  background: linear-gradient(45deg, #00d6f9 , #0c3bf0 );
+  display: block;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  border-radius: 10px;
+}
+label{
+  background: linear-gradient(45deg, #1176ecde 20%, #0a05f2 );
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.controls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controls:not(:first-child){
+  display:none;
+}
+[id = "hours"]::after{
+  content:"h";
+}

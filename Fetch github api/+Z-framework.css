@@ -1,0 +1,155 @@
+/* Flex directions (Applied on the element's parent)*/
+.f-center{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fl-center{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+.fr-center{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.ft-center{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+.fb-center{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.ftl-corner{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+.ftr-corner{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-start;
+}
+.fbl-corner{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+}
+.fbr-corner{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+/* Position directions (Applied on the element, parent must have relative position)*/
+.p-center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.pl-center{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+}
+.pr-center{
+    position:absolute;
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+}
+.pt-center{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+.pb-center{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+.ptl-corner{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.ptr-corner{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.pbl-corner{
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.pbr-corner{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+/* Shapes (in circles don't assign dimentions to the desired element)*/
+.c-20{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+}
+.arrow{
+    width:0;
+    height:0;
+    border:30px solid;
+}
+.ad-r{
+    border-color: transparent transparent transparent blue;
+}
+.ad-l{
+    border-color: transparent blue transparent transparent;
+}
+.ad-t{
+    border-color: transparent transparent blue transparent;
+}
+.ad-b{
+    border-color: blue transparent transparent blue;
+}
+.h-line{
+    position:absolute;
+    width:100%;
+    height:5px;
+}
+.v-line{
+    position:absolute;
+    width:5px;
+    height:100%;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    grid-template-rows:auto;
+}
+
+/* +++++Icons+++++ (Press ctrl + ? to activate)
+<i class="fa-solid fa-ghost"></i>
+<i class="fa-sharp fa-solid fa-code"></i>
+<i class="fas fa-angle-left change-background fa-2x"></i>
+<i class="fas fa-angle-right change-background fa-2x"></i>
+<i class="fas fa-bars toggle-menu"></i>
+
+<i class="fas fa-trophy"></i>
+<i class="far fa-folder"></i>
+<i class="fas fa-mug-hot"></i>
+<i class="far fa-envelope"></i>
++++++End Icons+++++ */
+
+/* ++++Media quieries++++
+small (min-width: 768px) 
+medium (min-width: 992px) 
+large (min-width: 1200px)
+++++End Media quieries++++ */

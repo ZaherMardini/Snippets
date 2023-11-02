@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Who wrote the play 'Romeo and Juliet'?",
+    "answers": ["Oscar Wilde", "William Shakespeare", "George Bernard Shaw", "Jane Austen"],
+    "correctAnswer": "William Shakespeare"
+  },
+  {
+    "question": "Which country is home to the Great Barrier Reef?",
+    "answers": ["Indonesia", "Thailand", "Australia", "Maldives"],
+    "correctAnswer": "Australia"
+  },
+  {
+    "question": "What is the tallest mountain in the world?",
+    "answers": ["Mount Kilimanjaro", "Mount Everest", "Mount Fuji", "Mount McKinley"],
+    "correctAnswer": "Mount Everest"
+  },
+  {
+    "question": "Who painted the 'Starry Night'?",
+    "answers": ["Claude Monet", "Pablo Picasso", "Vincent van Gogh", "Salvador Dali"],
+    "correctAnswer": "Vincent van Gogh"
+  }
+  ]

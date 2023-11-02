@@ -1,0 +1,121 @@
+*{
+  box-sizing:border-box;
+  text-transform: capitalize;
+  color:white;
+  margin:0;
+  padding:0;
+}
+:root{
+  --containerTestColor:#ffffff29;
+  --main-color:#14289b;
+  --secondary-color:#0065ff;
+  --contrast:aqua;
+}
+body{
+  background-color:rebeccapurple;;
+}
+.quiz-container{
+  background-color: var(--secondary-color);
+  width:70%;
+  margin:50px auto;
+  padding:50px;
+}
+.submit{
+  color: white;
+  background-color: var(--main-color);
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.start{
+  color: white;
+  background-color: var(--main-color);
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.quiz-info{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--containerTestColor);
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.answers-area{
+  margin: 10px 0;
+}
+.answers-area .answer input{
+  margin: 20px 0;
+}
+.answers-area .answer:not(:last-child){
+  border-bottom:3px solid var(--contrast)
+}
+.answers-area .answer input[type='radio']:checked + label{
+  color:var(--contrast);
+}
+.answers-area .answer input[type='radio']:checked{/*how can i change the checked color*/
+  background-color:var(--contrast);
+}
+label{
+  margin-left:10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.countdown{
+  background-color: var(--containerTestColor);
+  padding: 10px;
+  text-align: center;
+  margin: 25px 0;
+  font-size: 30px;
+}
+.quiz-container .bullets{
+  border-top: 1px solid var(--contrast);
+  background-color:var(--containerTestColor);
+  display:flex;
+  padding:20px;
+}
+.quiz-container .bullets .spans{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.quiz-container .bullets .spans span{
+  width:20px;
+  height:20px;
+  background-color:var(--containerTestColor);
+  margin-right:5px;
+  border-radius:50%;
+}
+.quiz-container .bullets .spans .on{
+  background-color:var(--contrast);
+}
+.results{
+    background-color: var(--containerTestColor);
+    padding: 10px;
+    text-align: center;
+    margin: 25px 0;
+    font-size: 30px;
+  }
+.results span[rank = 'f']{
+  background-color:black;
+  color:red;
+  padding:10px;
+
+}
+.results span[rank = 'a']{
+  background-color:black;
+  color:green;
+  padding:10px;
+  }
+.results span[rank = 's']{
+  background-color:black;
+  color:aqua;
+  padding:10px;
+  }

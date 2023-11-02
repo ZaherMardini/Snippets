@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="+Z-framework.css" />
+    <script defer src="main.js"></script>
+    <!-- <script type="module" src="main.js"></script> -->
+    <title>JS practice</title>
+  </head>
+  <body>
+    <div class="game-container f-center p-center">
+      <!-- <h1 class="title">boring game</h1> -->
+      <button class="play">Play</button>
+      <div class="record"></div>
+      <div class="info">
+        <!-- <span class="level f-center"></span> -->
+        <select class="level">
+          <option value="baby">baby</option>
+          <option value="rooky">rooky</option>
+          <option selected value="warrior">warrior</option>
+          <option value="veteran">veteran</option>
+        </select>
+        <span class="time f-center">time left:<span></span>s</span>
+      </div>
+      <div class="current-word f-center"></div>
+      <input type="text" class="input">
+      <div class="upcomming-words">
+      </div>
+      <div class="score">
+        score: <span id="current"></span> of <span id="total"></span>
+      </div>
+      <div class="finish"></div>
+    </div>
+  </body>
+</html>

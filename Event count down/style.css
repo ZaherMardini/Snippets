@@ -1,0 +1,30 @@
+*{
+  box-sizing:border-box;
+  text-transform: capitalize;
+  color:white;
+  margin:0;
+  padding:0;
+}
+:root{
+  --containerTestColor:#ffffff29;
+  --main-color:#14289b;
+  --secondary-color:#0065ff;
+  --contrast:aqua;
+}
+body{
+  background-color:rebeccapurple;;
+}
+.container{
+  background-color: var(--secondary-color);
+  width:70%;
+  margin:50px auto;
+  padding:50px;
+}
+.event{
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
